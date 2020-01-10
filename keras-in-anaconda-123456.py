@@ -1,7 +1,12 @@
-# this defines a signal that would make sense to decode via a VAE. The
-# signal is a sequence of integers e.g. 123456 that is found in random
-# integer noise; the aim of the network is then to encode the signal
-# in its latent space
+# This is a script largely derived from
+# https://blog.keras.io/building-autoencoders-in-keras.html
+#
+# In addition this script defines a signal that would make sense to
+# decode via a VAE. The signal is a sequence of integers e.g. 123456
+# that is found in random integer noise; the aim of the network is
+# then to encode the signal in its latent space
+# test:
+# >>> exec(open("./keras-in-anaconda-123456.py").read())
 
 from keras.layers import Input, Dense
 from keras.models import Model
